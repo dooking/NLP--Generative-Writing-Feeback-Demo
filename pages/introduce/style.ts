@@ -3,7 +3,7 @@ import { theme, media } from 'styles/theme';
 
 export const IntroduceContainer = styled.div`
   display: flex;
-  padding: 0px 200px;
+  padding: 0px 150px;
   justify-content: space-between;
   align-items: center;
   height: 400px;

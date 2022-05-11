@@ -3,7 +3,7 @@ import { theme, media } from 'styles/theme';
 
 export const HeaderContainer = styled.div`
   height: 80px;
-  padding: 0px 200px;
+  padding: 0px 150px;
   display: flex;
   justify-content: space-between;
 `;
