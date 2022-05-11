@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 import { theme, media } from './theme';
 
-export const HeaderContainer = styled.div`
-  background-color: ${theme.color.purple};
-
-  ${media.tablet} {
-    background-color: pink;
-  }
-`;
+export const Container = styled.div``;
+export const MainContainer = styled.div``;

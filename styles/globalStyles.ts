@@ -25,7 +25,7 @@ export const GlobalStyle = createGlobalStyle`
     html{
         font-size: 11px;
         -webkit-text-size-adjust: none;
-        font-family: -apple-system,BlinkMacSystemFont,helvetica,Apple SD Gothic Neo,sans-serif;       
+        font-family: GmarketSansMedium,sans-serif;       
         font-display: fallback;
         ${media.tablet}{
             font-size: 10px;
@@ -61,5 +61,20 @@ export const GlobalStyle = createGlobalStyle`
         ${media.mobile} {
             display: block;
         }
+    }
+    @font-face {
+        font-family: "GmarketSansLight";
+        font-weight: 300;
+        src: url("/fonts/GmarketSansTTFLight.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "GmarketSansMedium";
+        font-weight: 500;
+        src: url("/fonts/GmarketSansTTFMedium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "GmarketSansBold";
+        font-weight: 700;
+        src: url("/fonts/GmarketSansTTFBold.ttf") format("truetype");
     }
 `;
