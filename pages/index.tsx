@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import Link from 'next/Link';
 import * as S from 'styles/index.style';
 
-import Header from './header';
-import Introduce from './introduce';
-import Demo from './demo';
+import Header from '../components/header';
+import Introduce from '../components/introduce';
+import Demo from '../components/demo';
 
 const Index = () => {
   return (
