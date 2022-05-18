@@ -7,6 +7,7 @@ export const IntroduceContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 400px;
+  padding-bottom: 32px;
 `;
 
 export const TextBox = styled.div`
