@@ -6,11 +6,14 @@ export const DemoContainer = styled.div`
   flex-direction: column;
   padding: 0px 50px;
   margin-top: 32px;
+  button {
+    width: 180px !important;
+    border-radius: 12px;
+    height: 40px !important;
+    margin-left: auto;
+  }
 `;
 
-export const DemoTitle = styled.div`
-  font-size: 3rem;
-`;
 export const ProblemBox = styled.div`
   margin-top: 32px;
 `;
@@ -35,6 +38,7 @@ export const ProblemText = styled.div`
 
 export const ReadingBox = styled.div`
   margin-top: 32px;
+  margin-bottom: 32px;
 `;
 export const Reading = styled.div`
   font-weight: bold;

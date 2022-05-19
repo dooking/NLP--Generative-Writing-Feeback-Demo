@@ -3,23 +3,14 @@ import { theme, media } from 'styles/theme';
 
 export const DemoContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   padding: 0px 150px;
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #f0f0f1;
 `;
 
-export const DemoTitle = styled.div`
-  font-size: 3rem;
-  margin-bottom: 32px;
-`;
-
-export const DemoBox = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
 export const ProblemBox = styled.div`
   width: 400px;
   height: 250px;

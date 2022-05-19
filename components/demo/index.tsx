@@ -12,43 +12,38 @@ const Demo = () => {
   };
   return (
     <S.DemoContainer>
-      <S.DemoTitle>Demo</S.DemoTitle>
-      <S.DemoBox>
-        <S.ProblemBox>
-          <S.ProblemTitle>Direction</S.ProblemTitle>
-          <S.TempDiv>
-            <S.ProblemDiv>
-              <S.ProblemDescription>Reading Passage</S.ProblemDescription>
-              <S.ProblemDescription>
-                Listening Converstaion
-              </S.ProblemDescription>
-              <Link href="/demo/direction">
-                <S.DemoBtn>Demo</S.DemoBtn>
-              </Link>
-            </S.ProblemDiv>
-            <S.ProblemDiv>
-              <S.WritingImageBox>
-                <Image src={WritingImage} alt="writing" />
-              </S.WritingImageBox>
-            </S.ProblemDiv>
-          </S.TempDiv>
-        </S.ProblemBox>
-        <S.ProblemBox>
-          <S.ProblemTitle>Essay</S.ProblemTitle>
-          <S.TempDiv>
-            <S.ProblemDiv>
-              <S.ProblemDescription>Reading Problem</S.ProblemDescription>
-              <S.ProblemDescription>Writing Essay Form</S.ProblemDescription>
+      <S.ProblemBox>
+        <S.ProblemTitle>Direction</S.ProblemTitle>
+        <S.TempDiv>
+          <S.ProblemDiv>
+            <S.ProblemDescription>Reading Passage</S.ProblemDescription>
+            <S.ProblemDescription>Listening Converstaion</S.ProblemDescription>
+            <Link href="/demo/direction">
               <S.DemoBtn>Demo</S.DemoBtn>
-            </S.ProblemDiv>
-            <S.ProblemDiv>
-              <S.WritingImageBox>
-                <Image src={EssayImage} alt="writing" />
-              </S.WritingImageBox>
-            </S.ProblemDiv>
-          </S.TempDiv>
-        </S.ProblemBox>
-      </S.DemoBox>
+            </Link>
+          </S.ProblemDiv>
+          <S.ProblemDiv>
+            <S.WritingImageBox>
+              <Image src={WritingImage} alt="writing" />
+            </S.WritingImageBox>
+          </S.ProblemDiv>
+        </S.TempDiv>
+      </S.ProblemBox>
+      <S.ProblemBox>
+        <S.ProblemTitle>Essay</S.ProblemTitle>
+        <S.TempDiv>
+          <S.ProblemDiv>
+            <S.ProblemDescription>Reading Problem</S.ProblemDescription>
+            <S.ProblemDescription>Writing Essay Form</S.ProblemDescription>
+            <S.DemoBtn>Demo</S.DemoBtn>
+          </S.ProblemDiv>
+          <S.ProblemDiv>
+            <S.WritingImageBox>
+              <Image src={EssayImage} alt="writing" />
+            </S.WritingImageBox>
+          </S.ProblemDiv>
+        </S.TempDiv>
+      </S.ProblemBox>
     </S.DemoContainer>
   );
 };

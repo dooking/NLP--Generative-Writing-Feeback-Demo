@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import * as S from 'styles/index.style';
 import Header from '../../components/header';
 import Problem from 'components/problem';
-import { Steps } from 'antd';
+import Writing from 'components/Writing';
+import Review from 'components/Review';
+import { Steps, Button } from 'antd';
 const { Step } = Steps;
 
 const Direction = () => {
   const [step, setStep] = useState(0);
 
   const stepHandler = (current: number) => {
+    console.log('onChange:', current);
     setStep(current);
   };
 
@@ -16,18 +19,18 @@ const Direction = () => {
     <S.Container>
       <Header />
       <S.MainContainer>
-        <Steps
-          type="navigation"
-          size="small"
-          current={step}
-          onChange={stepHandler}
-          className="site-navigation-steps"
-        >
-          <Step title="Step 1" status="finish" description="Reading Passage" />
-          <Step title="Step 2" status="process" description="Conversation" />
-          <Step title="Step 3" status="wait" description="Writing & Review" />
+        <Steps current={step} type="navigation">
+          <Step title="Step 1" description="Reading Passage" />
+          <Step title="Step 2" description="Writing" />
+          <Step title="Step 3" description="Review" />
         </Steps>
-        <Problem />
+        {step == 0 ? (
+          <Problem onChange={stepHandler} step={step} />
+        ) : step == 1 ? (
+          <Writing onChange={stepHandler} step={step} />
+        ) : (
+          <Review />
+        )}
       </S.MainContainer>
     </S.Container>
   );
