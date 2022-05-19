@@ -2,12 +2,21 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import Link from 'next/Link';
 import LogoImage from 'public/logo.jpg';
-import { Button } from 'antd';
+import { Button, Spin, Space } from 'antd';
 import { CaretRightOutlined, CaretLeftOutlined } from '@ant-design/icons';
 import * as S from './style';
 
 const Writing = ({ onChange, step }: any) => {
   const [word, setWord] = useState('');
+  const [loading, setLoading] = useState(false);
+  if (loading)
+    return (
+      <S.SpinBox>
+        <Space size="middle">
+          <Spin size="large" />
+        </Space>
+      </S.SpinBox>
+    );
   return (
     <S.DemoContainer>
       <S.WritingBox>
@@ -22,7 +31,16 @@ const Writing = ({ onChange, step }: any) => {
           <CaretLeftOutlined />
           Previous Step
         </Button>
-        <Button type="primary" onClick={() => onChange(2)}>
+        <Button
+          type="primary"
+          onClick={() => {
+            setLoading(true);
+            setTimeout(() => {
+              setLoading(false);
+              onChange(2);
+            }, 3000);
+          }}
+        >
           Next Step
           <CaretRightOutlined />
         </Button>

@@ -29,7 +29,7 @@ const Direction = () => {
         ) : step == 1 ? (
           <Writing onChange={stepHandler} step={step} />
         ) : (
-          <Review />
+          <Review onChange={stepHandler} />
         )}
       </S.MainContainer>
     </S.Container>

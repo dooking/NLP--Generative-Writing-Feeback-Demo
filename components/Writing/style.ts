@@ -18,6 +18,16 @@ export const ButtonBox = styled.div`
   justify-content: space-between;
 `;
 
+export const SpinBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  .ant-spin-dot {
+    font-size: 80px;
+  }
+`;
+
 export const WritingBox = styled.div`
   margin-bottom: 32px;
 `;
@@ -32,7 +42,7 @@ export const Count = styled.div`
 export const WritingInput = styled.textarea`
   width: 100%;
   height: 500px;
-  background: #e2e2e2;
+  background: #f9f9f9;
   box-shadow: 0 2px 2px rgb(0 0 0 / 10%);
   border: none;
   resize: none;
