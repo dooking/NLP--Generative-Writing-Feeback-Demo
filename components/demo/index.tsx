@@ -22,7 +22,9 @@ const Demo = () => {
               <S.ProblemDescription>
                 Listening Converstaion
               </S.ProblemDescription>
-              <S.DemoBtn>Demo</S.DemoBtn>
+              <Link href="/demo/direction">
+                <S.DemoBtn>Demo</S.DemoBtn>
+              </Link>
             </S.ProblemDiv>
             <S.ProblemDiv>
               <S.WritingImageBox>

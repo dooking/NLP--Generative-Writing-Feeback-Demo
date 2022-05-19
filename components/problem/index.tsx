@@ -4,7 +4,7 @@ import Link from 'next/Link';
 import LogoImage from 'public/logo.jpg';
 import * as S from './style';
 
-const Demo = () => {
+const Problem = () => {
   const [active, setActive] = useState(false);
   const activeHandler = () => {
     setActive(!active);
@@ -110,4 +110,4 @@ const Demo = () => {
   );
 };
 
-export default Demo;
+export default Problem;
