@@ -6,11 +6,15 @@ import * as S from './style';
 const Header = () => {
   return (
     <S.HeaderContainer>
-      <S.WaveImageBox>
-        <Image src={LogoImage} />
-      </S.WaveImageBox>
+      <Link href="/">
+        <S.WaveImageBox>
+          <Image src={LogoImage} />
+        </S.WaveImageBox>
+      </Link>
       <S.Navbar>
-        <S.NavbarLink>Demo</S.NavbarLink>
+        <Link href="/demo">
+          <S.NavbarLink>Demo</S.NavbarLink>
+        </Link>
         <S.NavbarLink>Team</S.NavbarLink>
       </S.Navbar>
     </S.HeaderContainer>

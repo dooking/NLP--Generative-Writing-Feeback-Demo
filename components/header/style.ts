@@ -9,6 +9,7 @@ export const HeaderContainer = styled.div`
 `;
 export const WaveImageBox = styled.div`
   width: 100px;
+  cursor: pointer;
   & > span {
     width: 100px !important;
     height: 70px !important;
@@ -27,4 +28,5 @@ export const Navbar = styled.div`
 export const NavbarLink = styled.div`
   font-weight: bold;
   font-size: 1.5rem;
+  cursor: pointer;
 `;
