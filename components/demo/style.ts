@@ -2,13 +2,21 @@ import styled from 'styled-components';
 import { theme, media } from 'styles/theme';
 
 export const DemoContainer = styled.div`
+  padding: 0px 150px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+`;
+
+export const ProblemContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 150px;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  background-color: #f0f0f1;
+`;
+
+export const Title = styled.div`
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 32px;
 `;
 
 export const ProblemBox = styled.div`
@@ -27,6 +35,7 @@ export const ProblemDescription = styled.div`
   margin-bottom: 8px;
   color: #aeaeae;
   font-size: 1.1rem;
+  margin-right: auto;
 `;
 
 export const TempDiv = styled.div`

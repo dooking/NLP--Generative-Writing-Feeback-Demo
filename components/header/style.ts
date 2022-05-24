@@ -6,6 +6,7 @@ export const HeaderContainer = styled.div`
   padding: 0px 150px;
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px solid #f0f0f1;
 `;
 export const WaveImageBox = styled.div`
   width: 100px;

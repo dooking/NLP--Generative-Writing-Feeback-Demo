@@ -3,6 +3,9 @@ import { theme, media } from 'styles/theme';
 
 export const TeamContainer = styled.div`
   padding: 0px 150px;
+  background-color: #f0f0f1;
+  padding-top: 16px;
+  padding-bottom: 16px;
 `;
 export const Title = styled.div`
   font-size: 2rem;

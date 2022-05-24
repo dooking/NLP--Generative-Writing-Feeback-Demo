@@ -7,6 +7,7 @@ export const IntroduceContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 400px;
+  background-color: #f0f0f1;
 `;
 
 export const TextBox = styled.div`
@@ -59,6 +60,7 @@ export const WritingImageBox = styled.div`
   & > span {
     width: 500px !important;
     height: 300px !important;
+    border-radius: 24px;
   }
   img {
     object-fit: contain;
