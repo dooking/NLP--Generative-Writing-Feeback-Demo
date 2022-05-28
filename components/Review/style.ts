@@ -72,7 +72,11 @@ export const Progress = styled.div`
 export const ProgressTitle = styled.div`
   font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  &:first-child {
+    margin-top: 0px;
+  }
 `;
 
 export const ResultBox = styled.div`

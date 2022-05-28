@@ -52,12 +52,29 @@ const Review = ({ onChange, step }: any) => {
     <S.DemoContainer>
       <S.Title>Overview</S.Title>
       <S.ResultBox>
-        <Progress type="circle" percent={75} />
+        <Progress type="circle" percent={90} format={(percent) => `40 / 50`} />
         <S.Progress>
-          <S.ProgressTitle>5 Success</S.ProgressTitle>
-          <Progress percent={100} />
-          <S.ProgressTitle>13 Failed</S.ProgressTitle>
-          <Progress percent={70} status="exception" />
+          <S.ProgressTitle>5 Voca Issue</S.ProgressTitle>
+          <Progress
+            percent={50}
+            status="exception"
+            strokeColor="rgb(243 103 103);"
+            showInfo={false}
+          />
+          <S.ProgressTitle>3 Sentence Deleted</S.ProgressTitle>
+          <Progress
+            percent={30}
+            status="exception"
+            strokeColor="#108ee9"
+            showInfo={false}
+          />
+          <S.ProgressTitle>2 Conjunction Issue</S.ProgressTitle>
+          <Progress
+            percent={20}
+            status="exception"
+            strokeColor="#87d068"
+            showInfo={false}
+          />
         </S.Progress>
       </S.ResultBox>
 
