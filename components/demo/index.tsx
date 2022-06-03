@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Link from 'next/Link';
 import WritingImage from 'public/img/writing.jpg';
 import EssayImage from 'public/img/pencil.png';
 import * as S from './style';
@@ -22,9 +21,7 @@ const Demo = () => {
               <S.ProblemDescription>
                 Listening Converstaion
               </S.ProblemDescription>
-              <Link href="/demo/direction">
-                <S.DemoBtn>Demo</S.DemoBtn>
-              </Link>
+              <S.DemoBtn>Demo</S.DemoBtn>
             </S.ProblemDiv>
             <S.ProblemDiv>
               <S.WritingImageBox>
