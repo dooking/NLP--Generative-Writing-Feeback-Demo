@@ -1,5 +1,3 @@
-import styled from 'styled-components';
-import Link from 'next/Link';
 import * as S from 'styles/index.style';
 
 import Header from '../components/header';

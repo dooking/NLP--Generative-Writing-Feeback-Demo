@@ -1,7 +1,4 @@
-import Image from 'next/image';
 import React, { useState } from 'react';
-import Link from 'next/Link';
-import LogoImage from 'public/logo.jpg';
 import { Button, Spin, Space } from 'antd';
 import { CaretRightOutlined, CaretLeftOutlined } from '@ant-design/icons';
 import * as S from './style';
