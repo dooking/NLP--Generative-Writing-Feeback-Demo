@@ -15,7 +15,7 @@ const text = `
   Known for its loyalty and faithfulness,
   it can be found as a welcome guest in many households across the world.
 `;
-function callback(key) {
+function callback(key: any) {
   console.log(key);
 }
 
