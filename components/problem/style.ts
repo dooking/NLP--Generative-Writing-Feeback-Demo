@@ -16,6 +16,7 @@ export const DemoContainer = styled.div`
 
 export const ProblemBox = styled.div`
   margin-top: 32px;
+  margin-bottom: 16px;
 `;
 export const Problem = styled.div`
   font-weight: bold;
@@ -25,6 +26,9 @@ export const Problem = styled.div`
 `;
 export const ProblemSpan = styled.span`
   font-family: 'GmarketSansBold', serif;
+  display: block;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
 `;
 export const ProblemText = styled.div`
   border: 1px solid black;
@@ -114,3 +118,5 @@ export const SubmitButton = styled.div`
   margin-top: 16px;
   cursor: pointer;
 `;
+
+export const TempSpan = styled.div``;

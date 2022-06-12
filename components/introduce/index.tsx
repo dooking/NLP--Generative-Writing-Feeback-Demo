@@ -7,11 +7,11 @@ const Introduce = () => {
   return (
     <S.IntroduceContainer>
       <S.TextBox>
-        <S.TitleText>Towards Generative</S.TitleText>
-        <S.TitleText>Writing Feedback</S.TitleText>
+        <S.TitleText>A Dataset and Baseline for</S.TitleText>
+        <S.TitleText> Automated</S.TitleText>
+        <S.TitleText> Essay Correction</S.TitleText>
         <S.Description>
-          Compose bold, clear, mistake-free writing with Grammarly’s new
-          AI-powered desktop app.
+          Writing essay and AI can help you to edit your essay.
         </S.Description>
       </S.TextBox>
       <S.DemoBox>

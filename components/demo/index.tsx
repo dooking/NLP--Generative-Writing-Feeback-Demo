@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import WritingImage from 'public/img/writing.jpg';
 import EssayImage from 'public/img/pencil.png';
@@ -17,11 +18,11 @@ const Demo = () => {
           <S.ProblemTitle>Direction</S.ProblemTitle>
           <S.TempDiv>
             <S.ProblemDiv>
-              <S.ProblemDescription>Reading Passage</S.ProblemDescription>
-              <S.ProblemDescription>
-                Listening Converstaion
-              </S.ProblemDescription>
-              <S.DemoBtn>Demo</S.DemoBtn>
+              <S.ProblemDescription>Question</S.ProblemDescription>
+              <S.ProblemDescription>Idea Suggestion</S.ProblemDescription>
+              <Link href="/demo/direction">
+                <S.DemoBtn>Demo</S.DemoBtn>
+              </Link>
             </S.ProblemDiv>
             <S.ProblemDiv>
               <S.WritingImageBox>

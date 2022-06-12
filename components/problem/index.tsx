@@ -7,29 +7,31 @@ const Problem = ({ onChange, step }: any) => {
   return (
     <S.DemoContainer>
       <S.ProblemBox>
-        <S.Problem>Directions</S.Problem>
+        <S.Problem>Question</S.Problem>
         <S.ProblemText>
-          <S.ProblemSpan>Q. </S.ProblemSpan>
-          LanguageTool is your intelligent writing assistant for all common
-          browsers and word processors. Write or paste your text here too have
-          it checked continuously?
+          <S.ProblemSpan>
+            Some people believe that students should be given one long vacation
+            each year. Others believe that students should have several short
+            vacations throughout the year. Which view do you agree with?
+          </S.ProblemSpan>
+          <S.ProblemSpan>
+            Use specific reasons and examples to support your answer. Be sure to
+            use your own words. Do not use memorized examples.
+          </S.ProblemSpan>
         </S.ProblemText>
       </S.ProblemBox>
       <S.ReadingBox>
-        <S.Reading>Reading Passage</S.Reading>
+        <S.Reading>Idea Suggestion</S.Reading>
         <S.ReadingText>
-          Hemingway App makes your writing bold and clear. The app highlights
-          lengthy, complex sentences and common errors; if you see a yellow
-          sentence, shorten or split it. If you see a red highlight, your
-          sentence is so dense and complicated that your readers will get lost
-          trying to follow its meandering, splitting logic — try editing this
-          sentence to remove the red. You can utilize a shorter word in place of
-          a purple one. Mouse over them for hints. Adverbs and weakening phrases
-          are helpfully shown in blue. Get rid of them and pick words with
-          force, perhaps. Phrases in green have been marked to show passive
-          voice. You can format your text with the toolbar. Paste in something
-          you're working on and edit away. Or, click the Write button and
-          compose something new.
+          1) Many Short Vacation
+          <S.TempSpan>
+            - Allows students time to recover between quarters
+          </S.TempSpan>
+          <S.TempSpan>- More time for building maintenance</S.TempSpan>
+          <S.TempSpan>- Students forget over long breaks</S.TempSpan>
+          2) 1 long vacation :<S.TempSpan>- Can take long trips</S.TempSpan>
+          <S.TempSpan>- Can study overseas Students</S.TempSpan>
+          <S.TempSpan>- Can help with family farms</S.TempSpan>
         </S.ReadingText>
       </S.ReadingBox>
       <Button type="primary" onClick={() => onChange(1)}>

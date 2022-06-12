@@ -34,7 +34,7 @@ const Team = () => {
             <Image src={AvatarImage} alt="avartar" />
           </S.MemberImage>
           <S.MemberName>류효곤</S.MemberName>
-          <S.MemberDescription>컴퓨터학과 18학번</S.MemberDescription>
+          <S.MemberDescription>사이버국방학과 18학번</S.MemberDescription>
         </S.TeamMember>
       </S.TeamBox>
     </S.TeamContainer>

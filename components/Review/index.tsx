@@ -24,12 +24,12 @@ const Review = ({ onChange, step }: any) => {
 
   const content = (
     <div>
-      <p>portrays {'→'} portraits </p>
+      <p>all various education systems {'→'} various education system </p>
     </div>
   );
   const content2 = (
     <div>
-      <p>coastal {'→'} costal </p>
+      <p>student’s {'→'} students’ </p>
     </div>
   );
   const content3 = (
@@ -39,12 +39,60 @@ const Review = ({ onChange, step }: any) => {
   );
   const content4 = (
     <div>
-      <p>livelihoods {'→'} livelyhoods</p>
+      <p>one student’s {'→'} a student’s</p>
+    </div>
+  );
+  const content6 = (
+    <div>
+      <p>one long {'→'} a long</p>
     </div>
   );
   const content5 = (
     <div>
-      <p>aquaculture is not that good for local economies.</p>
+      <p>our students {'→'} students</p>
+    </div>
+  );
+  const content7 = (
+    <div>
+      <p>own personal {'→'} personal</p>
+    </div>
+  );
+  const content8 = (
+    <div>
+      <p>an evidence {'→'} evidence</p>
+    </div>
+  );
+  const content9 = (
+    <div>
+      <p>was known {'→'} was known as</p>
+    </div>
+  );
+  const content10 = (
+    <div>
+      <p>before {'→'} by</p>
+    </div>
+  );
+  const content11 = (
+    <div>
+      <p>
+        a new breathing to renew my abilities {'→'} breathing anew, an
+        opportunity to renew my abilities
+      </p>
+    </div>
+  );
+  const content12 = (
+    <div>
+      <p>comrehending {'→'} comprehending</p>
+    </div>
+  );
+  const content13 = (
+    <div>
+      <p>how diversity of {'→'} how a diversity of </p>
+    </div>
+  );
+  const content14 = (
+    <div>
+      <p>compitit {'→'} competitions</p>
     </div>
   );
 
@@ -52,27 +100,34 @@ const Review = ({ onChange, step }: any) => {
     <S.DemoContainer>
       <S.Title>Overview</S.Title>
       <S.ResultBox>
-        <Progress type="circle" percent={90} format={(percent) => `40 / 50`} />
+        <Progress type="circle" percent={90} format={(percent) => `30 / 50`} />
         <S.Progress>
-          <S.ProgressTitle>5 Voca Issue</S.ProgressTitle>
+          <S.ProgressTitle>9 Grammer is inaccurate</S.ProgressTitle>
           <Progress
-            percent={50}
+            percent={70}
+            status="exception"
+            strokeColor="#9c6baf"
+            showInfo={false}
+          />
+          <S.ProgressTitle>2 Voca Issue</S.ProgressTitle>
+          <Progress
+            percent={10}
             status="exception"
             strokeColor="rgb(243 103 103);"
             showInfo={false}
           />
-          <S.ProgressTitle>3 Sentence Deleted</S.ProgressTitle>
+          <S.ProgressTitle>2 Punctuation Issue</S.ProgressTitle>
           <Progress
-            percent={30}
-            status="exception"
-            strokeColor="#108ee9"
-            showInfo={false}
-          />
-          <S.ProgressTitle>2 Conjunction Issue</S.ProgressTitle>
-          <Progress
-            percent={20}
+            percent={10}
             status="exception"
             strokeColor="#87d068"
+            showInfo={false}
+          />
+          <S.ProgressTitle>2 Spelling Issue</S.ProgressTitle>
+          <Progress
+            percent={10}
+            status="exception"
+            strokeColor="#adafac"
             showInfo={false}
           />
         </S.Progress>
@@ -80,61 +135,98 @@ const Review = ({ onChange, step }: any) => {
 
       <S.Title>Review</S.Title>
       <S.WritingBox>
-        <S.Sentence>
-          The lecture explains that aquaculture is not as great as the article{' '}
-        </S.Sentence>
+        <S.Sentence>Nowadays,</S.Sentence>
         <Popover content={content} title="Voca" trigger="hover">
-          <Text mark>portraits</Text>
+          <Text mark>all various education systems</Text>
         </Popover>
+        <S.Sentence>
+          have interested about the arrangement of our students life in way
+          allow them get more benifited of their schooling life
+        </S.Sentence>
 
-        <S.Sentence> it to be. </S.Sentence>
-        <S.Sentence>First, fish farming may help protect </S.Sentence>
-        <Popover content={content2} title="wc_sp" trigger="hover">
-          <Text mark>coastal</Text>
+        <S.Sentence>One of these factors is </S.Sentence>
+        <Popover content={content2} title="wc_punc" trigger="hover">
+          <Text mark>student's</Text>
+        </Popover>
+        <S.Sentence> vacation life. </S.Sentence>
+
+        <S.Sentence>
+          I agree with the idea that one long vacation is required for
+        </S.Sentence>
+        <Popover content={content5} title="gr_acc" trigger="hover">
+          <Text strong> our students</Text>
         </Popover>
         <S.Sentence>
           {' '}
-          areas from pollution, but they also alter the ecosystem, destroying
-          natural habitats.
-        </S.Sentence>
-        <S.Sentence>Secondly, </S.Sentence>
-        <Popover content={content5} title="wc_sp" trigger="hover">
-          <Text strong>
-            {' '}
-            the writer suggests aquaculture is good for local economies,
-          </Text>
-        </Popover>
-        <S.Sentence>
-          however, the lecturer states that it is not that good.
+          I feel this way for two reasons which I will explore in the following
+          essay.
         </S.Sentence>
 
+        <S.Sentence>To begin with,</S.Sentence>
+        <Popover content={content4} title="gr_acc" trigger="hover">
+          <Text mark>one student's</Text>
+        </Popover>
+        <S.Sentence> long trip teaching life needs</S.Sentence>
+        <S.Sentence>To begin with,</S.Sentence>
+        <Popover content={content6} title="gr_acc" trigger="hover">
+          <Text mark>one long</Text>
+        </Popover>
+        <S.Sentence> vacation life.</S.Sentence>
+
+        <S.Sentence>My </S.Sentence>
+        <Popover content={content7} title="gr_acc" trigger="hover">
+          <Text mark>own personal</Text>
+        </Popover>
+        <S.Sentence> experience is compelling an</S.Sentence>
+        <Popover content={content8} title="gr_acc" trigger="hover">
+          <Text mark>evidence</Text>
+        </Popover>
+        <S.Sentence> of this topic.</S.Sentence>
+
+        <S.Sentence>Through my schooling life, I</S.Sentence>
+        <Popover content={content9} title="gr_acc" trigger="hover">
+          <Text mark>was known</Text>
+        </Popover>
+        <S.Sentence>one of clever students</S.Sentence>
+
+        <S.Sentence>Through my schooling life, I</S.Sentence>
+        <Popover content={content10} title="gr_acc" trigger="hover">
+          <Text mark>before</Text>
+        </Popover>
+        <S.Sentence>my family and teachers.</S.Sentence>
+
+        <S.Sentence>So, the vacation for me was like</S.Sentence>
+        <Popover
+          content={content11}
+          title="gr_acc, voca, wc_punc"
+          trigger="hover"
+        >
+          <Text mark>a new breathing to renew my abilities</Text>
+        </Popover>
+        <S.Sentence> and activities. </S.Sentence>
         <S.Sentence>
-          They can provide work, but people from the region often rely too much
-          on fishing for their
+          On the other hand, physical activity is considered an important factor
+          for strengthening our body.{' '}
         </S.Sentence>
-        <Popover content={content4} title="wc_sp" trigger="hover">
-          <Text mark>livelihoods</Text>
+
+        <S.Sentence>Furthermore, I believe that all of us</S.Sentence>
+        <Popover content={content12} title="wc_sp" trigger="hover">
+          <Text mark>comrehending</Text>
+        </Popover>
+        <Popover content={content13} title="gr_acc" trigger="hover">
+          <Text mark>how diversity of</Text>
         </Popover>
         <S.Sentence>
           {' '}
-          Fish farming can't provide jobs to sustain an entire region, so it can
-          actually increase unemployment in the population because there's no
-          other way for them to get a job. The fish farming can't provide jobs
-          to sustain an entire region, so it can actually enforce unenployment
-          on the population, because there's no other way for them to get a job.
+          sports and other activities would help our students and make them in
+          connected road for presenting all abilities.
         </S.Sentence>
 
-        <Popover content={content3} title="td_irr_info" trigger="hover">
-          <Text delete>
-            So, despite the article saying that fish farming is a great way to
-            take pressure off the animals and create a fish controled
-            enviromment, the lecture says that that's not the case.{' '}
-          </Text>
-        </Popover>
-        <Popover content={content3} title="td_irr_info" trigger="hover">
-          <Text delete>
-            Aquaculture actually makes the ecossistem worse for the fish.
-          </Text>
+        <S.Sentence>
+          For instance, my brother through these activities won in swimming
+        </S.Sentence>
+        <Popover content={content14} title="wc_sp" trigger="hover">
+          <Text mark>compitit</Text>
         </Popover>
       </S.WritingBox>
 
@@ -142,37 +234,43 @@ const Review = ({ onChange, step }: any) => {
       <S.ReviewBox>
         <Collapse defaultActiveKey={['1']} onChange={callback}>
           <Panel
-            header="The lecture explains that aquaculture is not as great as the article portrays it to be. "
+            header="Nowadays, all various education systems have interested about the arrangement of our students life in way
+            allow them get more benifited of their schooling life"
             key="1"
           >
-            <span>
-              The lecture explains that aquaculture is not as great as the
-              article{' '}
-            </span>
-            <Text mark>portraits</Text>
-            <span> it to be.</span>
-          </Panel>
-          <Panel
-            header="First, fish farming may help protect coastal areas from pollution, but they also alter the ecosystem, destroying natural habitats"
-            key="2"
-          >
-            <span>First, fish farming may help protect </span>
-            <Text mark>costal</Text>
+            <span>Nowadays,</span>
+            <Text mark>various education system</Text>
             <span>
               {' '}
-              areas from pollution, but they also alter the ecossistem,
-              destroying natural habitats.
+              have interested about the arrangement of our students life in way
+              allow them get more benifited of their schooling life
             </span>
           </Panel>
           <Panel
-            header="Secondly, the writer suggests aquaculture is good for local economies, however, the lecturer states that it is not that good."
-            key="3"
+            header="One of these factors is student's vacation life."
+            key="2"
           >
-            <Text mark>Secondly,</Text>
-            <span> aquaculture is not that good for local economies.</span>
+            <span>One of these factors is </span>
+            <Text mark>students’</Text>
+            <span> vacation life.</span>
           </Panel>
           <Panel
-            header="They can provide work, but people from the region often rely too much on fishing for their livelihoods. "
+            header=" I agree with the idea that one long vacation is required for our students I feel this way for two reasons which I will explore in the following
+            essay."
+            key="3"
+          >
+            <span>
+              I agree with the idea that one long vacation is required for
+            </span>
+            <Text mark>students</Text>
+            <span>
+              {' '}
+              I feel this way for two reasons which I will explore in the
+              following essay.
+            </span>
+          </Panel>
+          <Panel
+            header="To begin with,one student's long trip teaching life needs"
             key="4"
           >
             <span>
@@ -181,10 +279,7 @@ const Review = ({ onChange, step }: any) => {
             </span>
             <Text mark>livelyhoods.</Text>
           </Panel>
-          <Panel
-            header="Fish farming can't provide jobs to sustain an entire region, so it can actually increase unemployment in the population because there's no other way for them to get a job."
-            key="5"
-          >
+          <Panel header="To begin with,one long vacation life." key="5">
             <span>
               But, the worst aspect of aquaculture is that it pressures the wild
               fish,{' '}
@@ -193,8 +288,48 @@ const Review = ({ onChange, step }: any) => {
             <span>despite what the article says.</span>
           </Panel>
           <Panel
-            header="The fish being farmed are mostly predatory species and eat other fish to live, meaning more wild fish will be caught and processed into feed for the fish farms."
+            header="My own personal experience is compelling anevidence of this topic."
             key="6"
+          >
+            <span>They need a lot of fish in order to replace </span>
+            <Text mark>a wild fish,</Text>
+            <span> especially because the animal farms take their food.</span>
+          </Panel>
+          <Panel
+            header="Through my schooling life, Iwas knownone of clever studentsThrough my schooling life, Ibeforemy family and teachers."
+            key="7"
+          >
+            <span>They need a lot of fish in order to replace </span>
+            <Text mark>a wild fish,</Text>
+            <span> especially because the animal farms take their food.</span>
+          </Panel>
+          <Panel
+            header="So, the vacation for me was likea new breathing to renew my abilities and activities."
+            key="8"
+          >
+            <span>They need a lot of fish in order to replace </span>
+            <Text mark>a wild fish,</Text>
+            <span> especially because the animal farms take their food.</span>
+          </Panel>
+          <Panel
+            header="On the other hand, physical activity is considered an important factor for strengthening our body."
+            key="9"
+          >
+            <span>They need a lot of fish in order to replace </span>
+            <Text mark>a wild fish,</Text>
+            <span> especially because the animal farms take their food.</span>
+          </Panel>
+          <Panel
+            header="Furthermore, I believe that all of uscomrehendinghow diversity of sports and other activities would help our students and make them in connected road for presenting all abilities"
+            key="10"
+          >
+            <span>They need a lot of fish in order to replace </span>
+            <Text mark>a wild fish,</Text>
+            <span> especially because the animal farms take their food.</span>
+          </Panel>
+          <Panel
+            header=".For instance, my brother through these activities won in swimmingcompitit"
+            key="11"
           >
             <span>They need a lot of fish in order to replace </span>
             <Text mark>a wild fish,</Text>

@@ -32,9 +32,6 @@ export const TitleText = styled.div`
   font-weight: bold;
   font-size: 3rem;
   margin-bottom: 16px;
-  &:nth-child(2) {
-    margin-bottom: 32px;
-  }
 `;
 export const Description = styled.div`
   font-size: 1.3rem;
@@ -42,6 +39,7 @@ export const Description = styled.div`
   letter-spacing: 1px;
   line-height: 25px;
   margin-bottom: 32px;
+  margin-top: 32px;
 `;
 export const DemoBtn = styled.div`
   width: 150px;

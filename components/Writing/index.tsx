@@ -21,7 +21,7 @@ const Writing = ({ onChange, step }: any) => {
           onChange={(e) => setWord(e.target.value)}
           value={word}
         />
-        <S.Count>{word.length} / 500 </S.Count>
+        <S.Count>{word.length} / 1500 </S.Count>
       </S.WritingBox>
       <S.ButtonBox>
         <Button type="primary" onClick={() => onChange(0)}>
@@ -35,7 +35,7 @@ const Writing = ({ onChange, step }: any) => {
             setTimeout(() => {
               setLoading(false);
               onChange(2);
-            }, 3000);
+            }, 5000);
           }}
         >
           Next Step

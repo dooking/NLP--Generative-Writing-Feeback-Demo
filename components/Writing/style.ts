@@ -48,6 +48,6 @@ export const WritingInput = styled.textarea`
   resize: none;
   padding: 24px;
   font-size: 1.2rem;
-  line-height: 24px;
+  line-height: 32px;
   letter-spacing: 2px;
 `;
